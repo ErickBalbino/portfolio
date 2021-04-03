@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* RESET BASICO */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* CABEÇALHO */
+header{
+    display: flex;
+    background-color: rgb(27, 223, 223);
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo{
+    width: 10%;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+}
+.navbar nav .lista_principal{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.lista_principal li{
+    padding: 10px;
+    border-radius: 10px;
+}
+.lista_principal li:hover{
+    background-color: rgb(3, 211, 211);
+}
+.navbar nav .lista_principal li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #000;
+}
+#item1, #item3, #item4{
+    margin-left: 30px;
+}
+#item1{
+    margin-right: 30px;
+}
+.sublista{
+    display: none;
+    position: fixed;
+    background-color: #E6722E;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.sublista li{
+    padding: 0;
+}
+.sublista li a{
+    text-align: center;
+    display: block;
+    color: #000;
+    font-family: 'Mukta', sans-serif;
+    padding: 10px;
+}
+#subitem1{
+    border-bottom: 1px solid #444;
+}
+.sublista li:hover{
+    background-color: #e68954;
+}
+/* CONTEUDO PRINCIPAL */
+.background img{
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.introducao{
+    width: 850px;
+    background-color: rgba(170, 170, 170, 0.2);
+    height: 500px;
+    transform: translateX(20px) translateY(20px);
+    border-radius: 20px;
+}
+.introducao h1{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding: 100px 0px 0px 40px;
+    font-family: 'Orbitron', sans-serif;
+    transform: translateY(-150px);
+}
+.introducao p{
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 700px;
+    padding: 20px 0px 0px 100px;
+    transform: translateY(-130px);
+}
+.introducao .circ1{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 99, 71, 0.185);
+    border-radius: 30%;
+    animation: myanimation1 5s infinite linear;
+}
+@keyframes myanimation1{
+    from{left: 0px; top: 0px}
+    to{left: 700px; top: 340px}
+}
+.introducao .circ2{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 99, 71, 0.185);
+    border-radius: 30%;
+    animation: myanimation2 5s infinite linear;
+}
+@keyframes myanimation2{
+    from{left: 0px; top: -120px}
+    to{left: 700px; top: -480px}
+}
