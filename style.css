@@ -111,8 +111,9 @@ header{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.5;
-    width: 700px;
-    padding: 20px 0px 0px 100px;
+    width: 650px;
+    text-align: justify;
+    padding: 20px 20px 0px 100px;
     transform: translateY(-130px);
 }
 .introducao .circ1{
@@ -125,7 +126,7 @@ header{
 }
 @keyframes myanimation1{
     0%{left: 0px; top: 0px}
-    50%{left: 650px; top: 340px}
+    50%{left: 635px; top: 360px}
     100%{left: 0px; top: 0px;}
 }
 .introducao .circ2{
@@ -138,7 +139,7 @@ header{
 }
 @keyframes myanimation2{
     0%{left: 0px; top: -120px}
-    50%{left: 650px; top: -480px}
+    50%{left: 635px; top: -480px}
     100%{left: 0px; top: -120px;}
 }
 .robo{
@@ -271,12 +272,14 @@ header{
 }
 .tecnologias{
     height: auto;
+    background-color: #f5f5f5;
+    padding-bottom: 50px;
 }
 .tecnologias div h1{
     color: #E6722E;
     font-size: 2.4rem;
     font-family: 'Orbitron', sans-serif;
-    padding: 50px 0px 15px 30px;
+    padding: 100px 0px 15px 30px;
 }
 .tecnologias div p{
     font-size: 1.2rem;
@@ -297,13 +300,12 @@ header{
     margin-top: 20px;
 }
 .tecnologias .linguagens .html, .css, .js{
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     width: 350px;
     height: 300px;
     margin: auto;
     border-radius: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 2px 2px 6px #7676765d;
+    background-color: #fff;
     margin-bottom: 100px;
 }
 .linguagens #html, #css{
@@ -326,7 +328,11 @@ header{
     margin: auto;
     padding: 5px;
 }
-.
+.linguagens .html p{
+    text-align: center;
+    padding-right: 30px;
+    padding-top: 10px;
+}
 .linguagens .css p{
     text-align: center;
     padding-right: 30px;
@@ -342,11 +348,10 @@ header{
 .frameworks .bootstrap, .react{
     width: 400px;
     height: 300px;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     margin: auto;
     border-radius: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 2px 2px 6px #7676765d;
+    background-color: #fff;
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -357,4 +362,56 @@ header{
 .frameworks div p{
     text-align: center;
     padding-right: 30px;
+}
+.frameworks .react img{
+    margin-bottom: 15px;
+    display: flex;
+    margin: auto;
+}
+.banco-dados{
+    display: flex;
+    grid-template-columns: 1fr;
+}
+.banco-dados .mysql{
+    display: grid;
+    place-items: center;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.banco-dados .mysql img{
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.banco-dados .mysql p{
+    text-align: center;
+    padding-right: 30px;
+}
+.back-end{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.back-end .php, .python{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+}
+.back-end .php img, .python img{
+    display: flex;
+    margin: auto;
+}
+.back-end .php p, .back-end .python p{
+    text-align: center;
+    padding-right: 30px;
+    margin-top: 20px;
 }
