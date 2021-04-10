@@ -423,31 +423,75 @@ header{
 }
 .experiencia div{
     padding: 60px 0px 0px 20px;
+    background-color: #010c43;
 }
 .experiencia div h2{
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-family: 'Orbitron', sans-serif;
     color: #fff;
     padding-bottom: 40px;
 }
 .experiencia div h3{
     color: #fff;
-    font-size: 1.3rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    font-family: monospace;
     padding: 15px 0px 8px 15px;
 }
 .experiencia div p{
     color: #fff;
+    font-size: 1.2rem;
     font-family: monospace;
     padding-left: 30px;
-    width: 700px;
+    text-align: justify;
+    width: 750px;
 }
 .experiencia div figure{
-    width: 700px;
-    height: 400px;
-    background-color: #eee;
+    width: 1150px;
+    height: 507px;
+    background-color: #36479d;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     box-shadow: 2px 2px 8px #00051c72;
     border-radius: 10px;
 }
+.experiencia div figure img{
+    width: 900px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.experiencia div figure video{
+    width: 200px;
+    transform: translate(20px, -70px);
+    border-radius: 10px;
+}
+.experiencia div figure video{
+    outline: none;
+}
+.experiencia .ver-site{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    margin-top: 25px;
+}
+.experiencia div input:focus{
+    outline: none;
+}
+.experiencia div input:hover{
+    background-color: #2d3b82;
+}
+.experiencia div input{
+    border: none;
+    background-color: #36479d;
+    color: #eee;
+    padding: 7px;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.experiencia .arkkio {
+    margin-top: 40px;
+}
+
