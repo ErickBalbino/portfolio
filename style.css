@@ -51,6 +51,9 @@ header{
     font-weight: 550;
     color: #000;
 }
+.navbar nav .lista_principal li i{
+    margin-left: 3px;
+}
 #item1, #item3, #item4{
     margin-left: 20px;
 }
@@ -414,4 +417,37 @@ header{
     text-align: center;
     padding-right: 30px;
     margin-top: 20px;
+}
+.experiencia{
+    background-color: #010c43;
+}
+.experiencia div{
+    padding: 60px 0px 0px 20px;
+}
+.experiencia div h2{
+    font-size: 1.7rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    padding-bottom: 40px;
+}
+.experiencia div h3{
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px 0px 8px 15px;
+}
+.experiencia div p{
+    color: #fff;
+    font-family: monospace;
+    padding-left: 30px;
+    width: 700px;
+}
+.experiencia div figure{
+    width: 700px;
+    height: 400px;
+    background-color: #eee;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 2px 2px 8px #00051c72;
+    border-radius: 10px;
 }
