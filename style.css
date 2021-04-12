@@ -8,6 +8,9 @@
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* CABEÇALHO */
 header{
     display: flex;
@@ -420,6 +423,7 @@ header{
 }
 .experiencia{
     background-color: #010c43;
+    padding-bottom: 100px;
 }
 .experiencia div{
     padding: 60px 0px 0px 20px;
@@ -494,4 +498,156 @@ header{
 .experiencia .arkkio {
     margin-top: 40px;
 }
+footer .about{
+    height: auto;
+    padding: 100px 0px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+}
+footer .about .bio{
+    width: 45%;
+    padding: 0px 15px;
+}
+.about .bio h2{
+    font-family: monospace;
+    padding-bottom: 15px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about .bio p{
+    width: 90%;
+    font-family: monospace;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    font-weight: 600;
+}
+footer .about .sociais{
+    width: 35%;
+    padding: 0px 15px;
+    padding-right: 50px;
+}
+.about .sociais p{
+    font-size: 1.3rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+.about .sociais i{
+    color: #b4975a;
+    font-size: 1.4rem;
+    margin: 10px 5px;
+    padding: 5px;
+    font-weight: 600;
+    width: 20px;
+    border-radius: 10px;
+}
+.about .sociais i:hover{
+    background-color: #b4975a;
+    color: #fff;
+}
+footer .about .contato{
+    padding: 0px 15px;
+}
+.about .contato h2{
+    font-family: monospace;
+    padding-bottom: 15px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about .contato p{
+    font-size: 1.3rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+footer .copyright{
+    background-color: #b4975a;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright .copy p{
+   font-size: 1.2rem;
+   color: #fff;
+   font-family: 'Times New Roman', Times, serif;
+}
 
+/* MEDIA QUERIE */
+@media (max-width: 768px){
+    body{
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .tecnologias div .linguagens, .frameworks, .banco-dados, .back-end{
+        display: flex;
+        flex-direction: column;
+    }
+    .tecnologias div .linguagens div, .frameworks div, .banco-dados div, .back-end div{
+        width: 80%;
+        margin: auto;
+    }
+    .tecnologias div h2{
+        width: 95%;
+        margin: auto;
+    }
+    .experiencia div figure{
+        width: 95%;
+        margin: auto;
+    }
+    .experiencia div p{
+        width: 100%;
+        padding: 5px;
+    }
+    .experiencia div figure img{
+        width: 100%;
+    }
+    .experiencia div figure video{
+        width: 50%;
+        transform: translate(70px, 10px);
+    }
+    /* RODAPE */
+    footer .about{
+        width: 100%;
+        flex-direction: column;
+    }
+    footer .about .bio{
+        width: 100%;
+    }
+    footer .about .bio h2{
+        padding: 0px 5px 15px 5px;
+        font-size: 2rem;
+    }
+    footer .about .bio p{
+        width: 95%;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        padding: 0px 5px 0px 5px;
+    }
+    footer .about .sociais{
+        width: 100%;
+    }
+    footer .about .sociais p{
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 80px 5px 0px 5px;
+    }
+     footer .about .contato{
+        width: 100%;
+    }
+    footer .about .contato h2{
+        font-size: 2rem; 
+        padding: 50px  5px 15px 5px;
+    }
+    footer .about .contato p{
+        font-size: 1.2rem;
+        padding: 0px 5px;
+        line-height: 1.5;
+    }
+    .copyright .copy p{
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
