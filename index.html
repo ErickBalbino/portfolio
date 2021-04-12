@@ -39,11 +39,22 @@
                 </ul>
             </nav>
         </div>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-navicon" id="btn"></i>
+            <i class="fa fa-close" id="cancel"></i>
+        </label>
         <div class="sidebar">
-
-
+            <header>OPÇÕES</header>
+            <ul class="sidebar_lista">
+                <li><a href="#"><i class="fa fa-qrcode fa-1.5x"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-line-chart fa-1.5x"></i>Promoções</a></li>
+                <li><a href="#"><i class="fa fa-group fa-1.5x"></i>Nossa Equipe</a></li>
+                <li><a href="#"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
+                <li><a href="#"><i class="fa fa-wrench fa-1.5x"></i>Serviços/Atendimentos</a></li>
+                <li><a href="#"><i class="fa fa-envelope fa-1.5x"></i>Contato</a></li>
+            </ul>
         </div>
-        <div></div>
     </header>
     <main>
         <section class="first_part">
@@ -60,7 +71,6 @@
                 <p>Olá, sou o Eris, vou te acompanhar e te ajudar a conhecer meu criador Erick!</p>
             </div>
         </section>
-
         <section class="second_part">
             <div class="autobiografia">
                 <h1>UM POUCO DA MINHA HISTÓRIA</h1>
@@ -134,6 +144,8 @@
                 <h3 class="historiando">Projeto Pessoal - Historiando</h3>
                 <p>Meu primeiro projeto pessoal, construi esse site sozinho, com HTML, CSS, JS e JQUERY. Este site tem o intuito de ensinar história de maneira divertida e clara.</p>
                 <figure>
+                    <source media="(max-width: 768px)" srcset="imagens/historiando-p.png" type="image/png">
+                    <source media="(max-width:1000px)" srcset="imagens/historiando-m.png" type="image/png">
                     <img src="imagens/historiando.png" alt="">
                     <video class="video-historiando" src="videos/historiando-mobile.mp4" autoplay controls loop></video>
                 </figure>
@@ -143,6 +155,7 @@
                 <h3 class="arkkio">Loja Arkkio</h3>
                 <p>Sou co-fundador da loja online Arkkio, na qual fiquei responsável pela construção front-end do site. O site foi construido com HTML, CSS, JS, JQUERY e BOOTSTRAP.</p>
                 <figure>
+                    <source media="(max-width: 768px)" srcset="imagens/arkkio-p.png" type="image/">
                     <img src="imagens/arkkio.png" alt="">
                     <video class="video-arkkio" src="videos/arkkio-mobile.mp4" controls loop autoplay></video>
                 </figure>

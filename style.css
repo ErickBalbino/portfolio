@@ -72,6 +72,7 @@ header{
     background-color: #E6722E;
     margin-top: 10px;
     border-radius: 10px;
+    z-index: 1;
 }
 .sublista li{
     padding: 0;
@@ -88,6 +89,18 @@ header{
 }
 .sublista li:hover{
     background-color: #e68954;
+}
+#check{
+    display: none;
+}
+#btn{
+    display: none;
+}
+#cancel{
+    display: none;
+}
+.sidebar{
+    display: none;
 }
 /* CONTEUDO PRINCIPAL */
 .first_part{
@@ -575,10 +588,144 @@ footer .copyright{
 
 /* MEDIA QUERIE */
 @media (max-width: 768px){
+    /* CABECALHO */
+    header{
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+    .sidebar{
+        position: fixed;
+        left: -300px;
+        top: 0px;
+        width: 300px;
+        background-color: #fff;
+        height: 100%;
+        transition: ease-in-out 0.5s;
+        box-shadow: 2px 2px 6px rgb(158, 158, 158);
+        z-index: 1;
+    }
+    .sidebar header{
+        height: 80px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #000;
+        padding: 30px;
+        background-color: #f5f5f5;
+    }
+    .sidebar ul a{
+        display: block;
+        font-size: 1.1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #000;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        padding-left: 40px;
+        line-height: 55px;
+        box-sizing: border-box;
+        border-bottom: 2px solid rgb(200, 200, 200, 0.5);
+        transition: ease-in-out 0.3s;
+    }
+    .sidebar li:hover a{
+        padding-left: 50px;
+        background-color: #eee;
+    }
+    .sidebar ul li i{
+        margin-right: 10px;
+    }
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+    }
+    label #btn{
+        color: #000;
+        font-size: 20px;
+        z-index: 1;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -251px;
+        top: 20px;
+        font-size: 20px;
+        border: 2px solid #aaa;
+        color: #f00;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    #check:checked ~ .sidebar{
+        transition: ease-in-out 0.5s;
+        transform: translateX(300px);
+    }
+    #check:checked ~ .sidebar_lista{
+        overflow: auto;
+    }
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+        transition: ease-in-out 0.5s;
+        left: 252px;
+        position: fixed;
+    }
+    /* MAIN */
     body{
         height: auto;
         width: 100%;
         padding: 0;
+    }
+    .first_part .introducao{
+        height: auto;
+        width: 95%;
+        margin: auto;
+        transform: translate(0px, 0px);
+    }
+    .introducao h1{
+        font-size: 1.7rem;
+    }
+    .introducao p{
+        width: 100%;
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+    .circ1{
+        display: none;
+    }
+    .circ2{
+        display: none;
+    }
+    .robo{
+        display: none;
+    }
+    .robo-frase{
+        display: none;
+    }
+    .second_part{
+        height: auto;
+    }
+    .second_part .autobiografia{
+        width: 95%;
+        padding: 10px;
+        margin: auto;
+        height: 800px;
+    }
+    .second_part .autobiografia img{
+        width: 150px;
+        height: 150px;
+    }
+    .second_part .complemento{
+        display: none;
+    }
+    .tecnologias{
+        height: auto;
+        padding-top: 100px;
     }
     .tecnologias div .linguagens, .frameworks, .banco-dados, .back-end{
         display: flex;
