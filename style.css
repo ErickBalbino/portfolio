@@ -8,6 +8,7 @@
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -41,11 +42,11 @@ header{
     align-items: center;
     justify-content: center;
 }
-.lista_principal li{
+.navbar .lista_principal li{
     padding: 10px;
     border-radius: 10px;
 }
-.lista_principal li:hover{
+.navbar .lista_principal li:hover{
     background-color: rgb(3, 211, 211);
 }
 .navbar nav .lista_principal li a{
@@ -66,63 +67,25 @@ header{
 #item4{
     margin-right: 100px;
 }
-.sublista{
-    display: none;
-    position: fixed;
-    background-color: #E6722E;
-    margin-top: 10px;
-    border-radius: 10px;
-    z-index: 1;
-}
-.sublista li{
-    padding: 0;
-}
-.sublista li a{
-    text-align: center;
-    display: block;
-    color: #000;
-    font-family: 'Mukta', sans-serif;
-    padding: 10px;
-}
-#subitem1{
-    border-bottom: 1px solid #444;
-}
-.sublista li:hover{
-    background-color: #e68954;
-}
-#check{
-    display: none;
-}
-#btn{
-    display: none;
-}
-#cancel{
-    display: none;
-}
-.sidebar{
-    display: none;
-}
 /* CONTEUDO PRINCIPAL */
 .first_part{
     display: flex;
     background-image: url(imagens/background.jpg);
     background-size: 100%;
-    height: 600px;
+    padding: 50px 40px;
 }
 .introducao{
     width: 850px;
     background-color: rgba(170, 170, 170, 0.2);
     height: 500px;
-    transform: translateX(20px) translateY(20px);
     border-radius: 20px;
 }
 .introducao h1{
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 500;
-    padding: 100px 0px 0px 40px;
     font-family: 'Orbitron', sans-serif;
-    transform: translateY(-150px);
+    padding: 60px 20px;
 }
 .introducao p{
     color: #fff;
@@ -132,8 +95,7 @@ header{
     line-height: 1.5;
     width: 650px;
     text-align: justify;
-    padding: 20px 20px 0px 100px;
-    transform: translateY(-130px);
+    padding: 10px 30px;
 }
 .introducao .circ1{
     position: relative;
@@ -200,20 +162,19 @@ header{
     100%{top: 0px}
 }
 .second_part{
-    height: 750px;
     background-color: #000;
     display: flex;
     justify-content: space-around;
+    padding: 100px 0px;
 }
 .autobiografia{
     width: 700px;
     height: 500px;
-    transform: translate(0px, 100px);
     background: linear-gradient(to right, #f5f5f520, rgba(187, 187, 187, 0.111));
-    padding: 30px;
     border-radius: 20px;
     box-shadow: 3px 3px 6px #222;
     display: flex;
+    padding: 40px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -308,7 +269,6 @@ header{
 .tecnologias div h2{
     text-align: center;
     background-color: #f5f5f5;
-    width: 1250px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: auto;
     border-radius: 10px;
@@ -460,7 +420,7 @@ header{
     font-family: monospace;
     padding-left: 30px;
     text-align: justify;
-    width: 750px;
+    padding-right: 20px;
 }
 .experiencia div figure{
     width: 1150px;
@@ -477,9 +437,8 @@ header{
     border-radius: 10px;
 }
 .experiencia div figure video{
-    width: 200px;
-    transform: translate(20px, -70px);
-    border-radius: 10px;
+    width: 200px;;
+    padding-left: 20px;
 }
 .experiencia div figure video{
     outline: none;
@@ -490,6 +449,7 @@ header{
     align-items: flex-start;
     padding: 0px;
     margin-top: 25px;
+    margin-bottom: 100px;
 }
 .experiencia div input:focus{
     outline: none;
@@ -586,215 +546,144 @@ footer .copyright{
    font-family: 'Times New Roman', Times, serif;
 }
 
-/* MEDIA QUERIE */
-@media (max-width: 768px){
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
     /* CABECALHO */
-    header{
-        flex-direction: row-reverse;
-        width: 100%;
-    }
     .navbar{
         display: none;
     }
-    .sidebar{
-        position: fixed;
-        left: -300px;
-        top: 0px;
-        width: 300px;
-        background-color: #fff;
-        height: 100%;
-        transition: ease-in-out 0.5s;
-        box-shadow: 2px 2px 6px rgb(158, 158, 158);
-        z-index: 1;
-    }
-    .sidebar header{
-        height: 80px;
-        text-align: center;
-        font-size: 1.5rem;
-        color: #000;
-        padding: 30px;
-        background-color: #f5f5f5;
-    }
-    .sidebar ul a{
-        display: block;
-        font-size: 1.1rem;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #000;
-        height: 100%;
+    header{
+        display: flex;
+        height: 65px;
         width: 100%;
-        text-align: left;
-        padding-left: 40px;
-        line-height: 55px;
-        box-sizing: border-box;
-        border-bottom: 2px solid rgb(200, 200, 200, 0.5);
-        transition: ease-in-out 0.3s;
+        justify-content: center;
+        align-items: center;
     }
-    .sidebar li:hover a{
-        padding-left: 50px;
-        background-color: #eee;
+    .logo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
-    .sidebar ul li i{
-        margin-right: 10px;
-    }
-    #check{
-        display: none;
-    }
-    label #btn, label #cancel{
-        position: absolute;
-        cursor: pointer;
-    }
-    label #btn{
-        color: #000;
-        font-size: 20px;
-        z-index: 1;
-    }
-    label #cancel{
-        z-index: 1111;
-        left: -251px;
-        top: 20px;
-        font-size: 20px;
-        border: 2px solid #aaa;
-        color: #f00;
-        padding: 5px;
-        border-radius: 10px;
-    }
-    #check:checked ~ .sidebar{
-        transition: ease-in-out 0.5s;
-        transform: translateX(300px);
-    }
-    #check:checked ~ .sidebar_lista{
-        overflow: auto;
-    }
-    #check:checked ~ label #btn{
-        left: 250px;
-        opacity: 0;
-        pointer-events: none;
-    }
-    #check:checked ~ label #cancel{
-        transition: ease-in-out 0.5s;
-        left: 252px;
-        position: fixed;
+    .logo img{
+        width: 70px;
+        height: auto;
+        margin-left: 0px;
     }
     /* MAIN */
-    body{
-        height: auto;
-        width: 100%;
-        padding: 0;
+    .first_part{
+        background-image: none;
+        padding: 30px 0px;
+        background: linear-gradient(60deg, rgba(0, 0, 255, 0.597), #b4985ab4, rgba(0, 0, 255, 0.556));
+        animation: coloranimation 2s infinite ease-in-out;
+    }
+    @keyframes coloranimation {
+        0%{background: linear-gradient(60deg, rgba(0, 0, 255, 0.816), #b4985ad0, rgba(0, 0, 255, 0.864))}
+        50%{background: linear-gradient(60deg, rgba(0, 0, 255, 0.878), #b4985ade, rgba(0, 0, 255, 0.912))}
+        100%{background: linear-gradient(60deg, rgb(0, 0, 255), #b4985a, rgb(0, 0, 255))}
     }
     .first_part .introducao{
-        height: auto;
-        width: 95%;
-        margin: auto;
-        transform: translate(0px, 0px);
-    }
-    .introducao h1{
-        font-size: 1.7rem;
-    }
-    .introducao p{
         width: 100%;
-        padding: 10px;
-        font-size: 1.3rem;
+        background-color: #f5f5f527;
+        height: auto;
+        margin: 20px;
     }
-    .circ1{
-        display: none;
+    .first_part .introducao h1, .introducao p{
+        color: #000;
     }
-    .circ2{
-        display: none;
+    .first_part .introducao h1{
+        width: auto;
+        text-align: center;
+        padding: 10px 10px;
+        font-size: 1.5rem;
     }
-    .robo{
-        display: none;
+    .first_part .introducao p{
+        width: auto;
+        font-size: 1.2rem;
+        text-align: center;
     }
-    .robo-frase{
+    .robo, .robo-frase{
         display: none;
     }
     .second_part{
         height: auto;
+        padding: 40px 10px;
     }
     .second_part .autobiografia{
-        width: 95%;
-        padding: 10px;
-        margin: auto;
-        height: 800px;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+    .second_part .autobiografia h1{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .second_part .autobiografia p{
+        font-size: 1.05rem;
+        text-align: left;
+        width: 100%;
     }
     .second_part .autobiografia img{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
     .second_part .complemento{
         display: none;
     }
-    .tecnologias{
+    .tecnologias .linguagens{
+        grid-template-columns: 1fr;
+    }
+    .tecnologias .frameworks{
+        grid-template-columns: 1fr;
+    }
+    .tecnologias .back-end{
+        grid-template-columns: 1fr;
+    }
+    .tecnologias .linguagens{
         height: auto;
-        padding-top: 100px;
     }
-    .tecnologias div .linguagens, .frameworks, .banco-dados, .back-end{
-        display: flex;
-        flex-direction: column;
-    }
-    .tecnologias div .linguagens div, .frameworks div, .banco-dados div, .back-end div{
+    .tecnologias .linguagens .html, .css, .js{
         width: 80%;
         margin: auto;
+        height: auto;
     }
-    .tecnologias div h2{
-        width: 95%;
+    .tecnologias .frameworks{
+        height: auto;
+    }
+    .tecnologias .frameworks .bootstrap, .react{
+        width: 80%;
+        margin: auto;
+        height: auto;
+    }
+    .tecnologias .banco-dados .mysql{
+        width: 80%;
+        margin: auto;
+        height: auto;
+    }
+    .tecnologias .back-end .php, .python{
+        width: 80%;
+        height: auto;
         margin: auto;
     }
     .experiencia div figure{
-        width: 95%;
-        margin: auto;
-    }
-    .experiencia div p{
-        width: 100%;
-        padding: 5px;
+        width: auto;
+        height: auto;
+        padding: 10px;
     }
     .experiencia div figure img{
         width: 100%;
     }
-    .experiencia div figure video{
-        width: 50%;
-        transform: translate(70px, 10px);
-    }
+    .experiencia 
     /* RODAPE */
+    footer{
+        height: auto;
+    }
     footer .about{
-        width: 100%;
+        display: flex;
         flex-direction: column;
     }
-    footer .about .bio{
-        width: 100%;
-    }
-    footer .about .bio h2{
-        padding: 0px 5px 15px 5px;
-        font-size: 2rem;
-    }
-    footer .about .bio p{
-        width: 95%;
-        line-height: 1.5;
-        font-size: 1.2rem;
-        padding: 0px 5px 0px 5px;
-    }
-    footer .about .sociais{
-        width: 100%;
-    }
-    footer .about .sociais p{
-        width: 100%;
-        font-size: 1.2rem;
-        padding: 80px 5px 0px 5px;
-    }
-     footer .about .contato{
-        width: 100%;
-    }
-    footer .about .contato h2{
-        font-size: 2rem; 
-        padding: 50px  5px 15px 5px;
-    }
-    footer .about .contato p{
-        font-size: 1.2rem;
-        padding: 0px 5px;
-        line-height: 1.5;
-    }
-    .copyright .copy p{
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-align: center;
+    .bio,.bio h2, .bio p, .sociais, .sociais p, .contato, .contato h2, .contato p{
+        width: auto;
     }
 }
