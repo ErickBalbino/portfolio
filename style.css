@@ -55,14 +55,8 @@ header{
     font-weight: 550;
     color: #000;
 }
-.navbar nav .lista_principal li i{
-    margin-left: 3px;
-}
 #item1, #item3, #item4{
     margin-left: 20px;
-}
-#item1{
-    margin-right: 20px;
 }
 #item4{
     margin-right: 100px;
@@ -587,6 +581,7 @@ footer .copyright{
         background-color: #f5f5f527;
         height: auto;
         margin: 20px;
+        padding: 30px 0px;
     }
     .first_part .introducao h1, .introducao p{
         color: #000;
@@ -595,12 +590,14 @@ footer .copyright{
         width: auto;
         text-align: center;
         padding: 10px 10px;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .first_part .introducao p{
         width: auto;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .robo, .robo-frase{
         display: none;
@@ -615,14 +612,17 @@ footer .copyright{
         box-shadow: none;
     }
     .second_part .autobiografia h1{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: center;
         padding-bottom: 40px;
     }
     .second_part .autobiografia p{
         font-size: 1.05rem;
+        padding-bottom: 20px;
+        margin: 0px;
         text-align: left;
-        width: 100%;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .second_part .autobiografia img{
         width: 120px;
@@ -630,6 +630,25 @@ footer .copyright{
     }
     .second_part .complemento{
         display: none;
+    }
+    .tecnologias div h1{
+        text-align: center;
+        padding: 60px 10px 30px 10px;
+        font-size: 2rem;
+    }
+    .tecnologias div p{
+        text-align: justify;
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+    .tecnologias div h2{
+        margin: 30px 0px;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        width: auto;
+        background-color: #ccc;
     }
     .tecnologias .linguagens{
         grid-template-columns: 1fr;
@@ -647,6 +666,24 @@ footer .copyright{
         width: 80%;
         margin: auto;
         height: auto;
+        margin-bottom: 30px;
+    }
+    .tecnologias .linguagens #html{
+        width: 80px;
+        height: auto;
+    }
+    .tecnologias .linguagens #css{
+        width: 90px;
+        height: auto;
+    }
+    .tecnologias .linguagens #js{
+        width: 78px;
+        height: auto;
+    }
+    .tecnologias .linguagens p{
+        padding: 8px;
+        font-family: 'Times New Roman', Times, serif;
+        font-family: 1.1rem;
     }
     .tecnologias .frameworks{
         height: auto;
@@ -655,16 +692,54 @@ footer .copyright{
         width: 80%;
         margin: auto;
         height: auto;
+        margin-bottom: 30px;
+    }
+    .tecnologias .frameworks #bootstrap, #react{
+        width: 120px;
+        height: auto;
+    }
+    .tecnologias .frameworks p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1rem;
+        padding: 8px;
+        text-align: center;
     }
     .tecnologias .banco-dados .mysql{
         width: 80%;
         margin: auto;
         height: auto;
+        margin-bottom: 30px;
+    }
+    .tecnologias .banco-dados .mysql img{
+        width: 120px;
+        height: auto;
+    }
+    .tecnologias .banco-dados p{
+        font-size: 1.1rem;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        padding: 8px;
     }
     .tecnologias .back-end .php, .python{
         width: 80%;
         height: auto;
         margin: auto;
+        margin-bottom: 30px;
+    }
+    .tecnologias .back-end #php{
+        width: 120px;
+        height: auto;
+    }
+    .tecnologias .back-end #python{
+        width: 160px;
+        height: auto;
+        margin-top: 10px;
+    }
+    .tecnologias .back-end p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 8px;
     }
     .experiencia div figure{
         width: auto;
@@ -678,12 +753,13 @@ footer .copyright{
     /* RODAPE */
     footer{
         height: auto;
+        width: auto;
     }
     footer .about{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        padding: 40px 0px;
     }
-    .bio,.bio h2, .bio p, .sociais, .sociais p, .contato, .contato h2, .contato p{
-        width: auto;
-    }
+   
 }
