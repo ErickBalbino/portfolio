@@ -566,31 +566,25 @@ footer .copyright{
     }
     /* MAIN */
     .first_part{
-        background-image: none;
-        padding: 30px 0px;
-        background: linear-gradient(60deg, rgba(0, 0, 255, 0.597), #b4985ab4, rgba(0, 0, 255, 0.556));
-        animation: coloranimation 2s infinite ease-in-out;
-    }
-    @keyframes coloranimation {
-        0%{background: linear-gradient(60deg, rgba(0, 0, 255, 0.816), #b4985ad0, rgba(0, 0, 255, 0.864))}
-        50%{background: linear-gradient(60deg, rgba(0, 0, 255, 0.878), #b4985ade, rgba(0, 0, 255, 0.912))}
-        100%{background: linear-gradient(60deg, rgb(0, 0, 255), #b4985a, rgb(0, 0, 255))}
+        background-image: url(imagens/background-mobile.jpg);
+        padding: 100px 10px;
+        background-size: 100%;
     }
     .first_part .introducao{
         width: 100%;
         background-color: #f5f5f527;
         height: auto;
-        margin: 20px;
-        padding: 30px 0px;
+        margin: 5px;
+        padding: 20px 0px;
     }
     .first_part .introducao h1, .introducao p{
-        color: #000;
+        color: #fff;
     }
     .first_part .introducao h1{
         width: auto;
         text-align: center;
         padding: 10px 10px;
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .first_part .introducao p{
@@ -598,6 +592,7 @@ footer .copyright{
         font-size: 1.1rem;
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
     }
     .robo, .robo-frase{
         display: none;
@@ -634,20 +629,23 @@ footer .copyright{
     .tecnologias div h1{
         text-align: center;
         padding: 60px 10px 30px 10px;
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .tecnologias div p{
         text-align: justify;
         padding: 10px;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
     }
     .tecnologias div h2{
         margin: 30px 0px;
         padding: 5px 10px;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 500;
         width: auto;
+        border-radius: 0px;
         background-color: #ccc;
     }
     .tecnologias .linguagens{
@@ -669,7 +667,7 @@ footer .copyright{
         margin-bottom: 30px;
     }
     .tecnologias .linguagens #html{
-        width: 80px;
+        width: 85px;
         height: auto;
     }
     .tecnologias .linguagens #css{
@@ -681,9 +679,10 @@ footer .copyright{
         height: auto;
     }
     .tecnologias .linguagens p{
-        padding: 8px;
+        padding: 10px 15px;
         font-family: 'Times New Roman', Times, serif;
-        font-family: 1.1rem;
+        font-family: 1.05rem;
+        font-weight: 600;
     }
     .tecnologias .frameworks{
         height: auto;
@@ -700,7 +699,8 @@ footer .copyright{
     }
     .tecnologias .frameworks p{
         font-family: 'Times New Roman', Times, serif;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+        font-weight: 600;
         padding: 8px;
         text-align: center;
     }
@@ -715,10 +715,11 @@ footer .copyright{
         height: auto;
     }
     .tecnologias .banco-dados p{
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         font-family: 'Times New Roman', Times, serif;
         text-align: center;
         padding: 8px;
+        font-weight: 600;
     }
     .tecnologias .back-end .php, .python{
         width: 80%;
@@ -737,9 +738,25 @@ footer .copyright{
     }
     .tecnologias .back-end p{
         font-family: 'Times New Roman', Times, serif;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+        font-weight: 600;
         text-align: center;
         padding: 8px;
+    }
+    .experiencia div{
+        padding: 60px 10px;
+    }
+    .experiencia div h2{
+        padding: 0px;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .experiencia div h3{
+        font-size: 1.4rem;
+        padding: 40px 5px 10px 5px;
+    }
+    .experiencia div p{
+        padding: 0px 5px;
     }
     .experiencia div figure{
         width: auto;
@@ -748,18 +765,55 @@ footer .copyright{
     }
     .experiencia div figure img{
         width: 100%;
-    }
-    .experiencia 
-    /* RODAPE */
-    footer{
         height: auto;
-        width: auto;
     }
+    .experiencia div figure video{
+        width: 150px;
+        height: auto;
+        transform: translateX(70px);
+    }
+    /* RODAPE */
     footer .about{
+        height: auto;
+        padding: 50px 0px;
+        background-color: #f5f5f5;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        width: 100%;
-        padding: 40px 0px;
     }
-   
+    footer .about .bio{
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .about .bio h2{
+        font-family: monospace;
+        font-size: 2.3rem;
+        padding: 0px 10px;
+    }
+    .about .bio p{
+        width: auto;
+        padding: 10px 10px 50px 10px;
+        font-size: 1.1rem;
+    }
+    footer .about .sociais{
+        width: 100%;
+        padding: 0px 0px;
+        padding-right: 0px;
+    }
+    .about .sociais p{
+        padding: 0px 10px;
+        font-size: 1.1rem;
+    }
+    .about .contato h2{
+        font-size: 2.3rem;
+        padding: 50px 0px 15px 0px;
+    }
+    .about .contato p{
+        line-height: 1.5;
+        font-size: 1.1rem;
+    }
+    .copyright .copy p{
+        text-align: center;
+        font-size: 1.05rem;
+    }
 }
