@@ -757,8 +757,12 @@ footer .copyright{
     }
     .experiencia div p{
         padding: 0px 5px;
+        text-align: left;
     }
     .experiencia div figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: auto;
         height: auto;
         padding: 10px;
@@ -769,8 +773,8 @@ footer .copyright{
     }
     .experiencia div figure video{
         width: 150px;
+        padding: 10px 0px;
         height: auto;
-        transform: translateX(50px);
     }
     /* RODAPE */
     footer .about{
@@ -815,5 +819,100 @@ footer .copyright{
     .copyright .copy p{
         text-align: center;
         font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* HEADER */
+    .logo img{
+        width: 100px;
+    }
+    .navbar ul{
+        margin: 0px;
+    }
+    .navbar ul li{
+        padding: 10px;
+        margin: 0px;
+    }
+    .navbar #item1, #item2, #item3, #item4{
+        margin: 0px;
+        padding: 15px;
+    } 
+    /* MAIN */
+    main .first_part{
+        display: flex;
+        height: auto;
+    }
+    .first_part .introducao{
+        width: 55%;
+        height: auto;
+    }
+    .first_part .introducao h1{
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .first_part .introducao p{
+        width: auto;
+    }
+    .first_part .introducao p{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .first_part .robo{
+        width: 25%;
+    }
+    .first_part .robo img{
+        width: 230px;
+        height: auto;
+    }
+    .first_part .robo-frase{
+        width: 20%;
+    }
+    .first_part .robo-frase p{
+        transform: translate(10px, -100px);
+    }
+    .second_part .autobiografia{
+        width: 55%;
+        height: auto;
+    }
+    .second_part .autobiografia img{
+        width: 180px;
+        height: 180px;
+    }
+    .second_part .complemento .lua .circPreto{
+        transform: translate(30px, -160px);
+    }
+    .second_part .complemento .robo_vector{
+        transform: translateX(20px);
+    }
+    .second_part .complemento .robo_vector img{
+        width: 150px;
+    }
+    .tecnologias .linguagens{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        place-content: center;
+    }
+    .tecnologias .linguagens .html, .css, .js{
+        width: 80%;
+    }
+    .tecnologias .frameworks .bootstrap, .react{
+        width: 80%;
+    }
+    .tecnologias .banco-dados .mysql{
+        width: 40%;
+    }
+    .tecnologias .back-end .php, .python{
+        width: 80%;
+    }
+    .experiencia div figure{
+        width: auto;
+        height: auto;
+    }
+    .experiencia div figure img{
+        width: 75%;
+    }
+    .experiencia div figure video{
+        width: 20%;
     }
 }
