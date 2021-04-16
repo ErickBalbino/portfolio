@@ -1,2 +1,9 @@
-# portfolio
- Aqui você irá encontrar o site que contém todas as informações sobre mim, fique a vontade.
+# PORTFOLIO
+  Olá, aqui está o link do meu portfolio: https://erickbalbino.github.io/portfolio-atualizado
+  
+  O site foi construido com
+  * HTML
+  * CSS
+  * JS
+  * JQUERY
+  * BOOTSTRAP
