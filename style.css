@@ -479,32 +479,33 @@ footer .about .bio{
 .about .bio h2{
     font-family: monospace;
     padding-bottom: 15px;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2.5rem;
 }
 .about .bio p{
     width: 90%;
     font-family: monospace;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-left: 5px;
-    font-weight: 600;
 }
 footer .about .sociais{
     width: 35%;
     padding: 0px 15px;
     padding-right: 50px;
 }
-.about .sociais p{
-    font-size: 1.3rem;
+.about .sociais h2{
     font-family: monospace;
-    font-weight: 600;
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+}
+.about .sociais p{
+    font-size: 1.1rem;
+    font-family: monospace;
 }
 .about .sociais i{
     color: #b4975a;
     font-size: 1.4rem;
     margin: 10px 5px;
     padding: 5px;
-    font-weight: 600;
     width: 20px;
     border-radius: 10px;
 }
@@ -518,13 +519,11 @@ footer .about .contato{
 .about .contato h2{
     font-family: monospace;
     padding-bottom: 15px;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2.5rem;
 }
 .about .contato p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: monospace;
-    font-weight: 600;
 }
 footer .copyright{
     background-color: #b4975a;
@@ -803,6 +802,11 @@ footer .copyright{
         width: 100%;
         padding: 0px 0px;
         padding-right: 0px;
+    }
+    .about .sociais h2{
+        font-family: monospace;
+        font-size: 2.3rem;
+        padding: 0px 10px;
     }
     .about .sociais p{
         padding: 0px 10px;
