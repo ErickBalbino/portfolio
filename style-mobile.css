@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    /* CABEÇALHO */
+    .navbar{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: none;
+        flex-direction: row-reverse;
+        padding: 5px 15px;
+    }
+
+    header div img{
+        width: 45px;
+    }
+
+    header .logo{
+        width: 56vw;
+    }
+
+    header .sidebar{
+        display: flex;
+        width: 44vw;
+    }
+
+    header .sidebar i{
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    /* CONTEÚDO */
+    .introducao{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .introducao_text{
+        width: 93vw;
+        padding: 20px;
+    }
+
+    .introducao_text h1{
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .introducao_image{
+        width: 100vw;
+        height: auto;
+    }
+
+    .introducao_image img{
+        width: 100%;
+        height: auto;
+      
+    }
+
+    .projects{
+        padding: 30px 15px;
+
+    }
+
+    .projects_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects_container_project{
+        height: 380px;
+    }
+}
