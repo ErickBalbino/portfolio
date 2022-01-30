@@ -1,127 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio construído por erick balbino da silva, desenvolvedor full stack">
-    <meta name="keywords" content="portfolio, erick balbino da silva, desenvolvimento front-end">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio construído por erick balbino da silva, desenvolvedor full stack">
+        <meta name="keywords" content="portfolio, erick balbino da silva, desenvolvimento front-end">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-mobile.css">
-    
-    <title>Erick Developer</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="imagens/logo.png" alt="logo erick developer">
-        </div>
-
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <a href="#">
-                        <li>Sobre</li>
-                    </a>
-                    <a href="#">
-                        <li>Projetos</li>
-                    </a>
-                    <a href="#">
-                        <li>Currículo</li>
-                    </a>
-                    <a href="#">
-                        <li>Tecnologias</li>
-                    </a>
-                    <a href="#">
-                        <li class="btnContato">Contato</li>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="sidebar">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
-
-    <main>
-        <section class="introducao">
-            <div class="introducao_text">
-                <h1>welcome to my world!</h1>
-                <p>Olá, meu nome é Erick, sou desenvolvedor front-end, esse é meu portfólio, seja bem-vindo <span class="underline">_</span></p>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-mobile.css">
+        
+        <title>Erick Developer</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="imagens/logo.png" alt="logo erick developer">
             </div>
 
-            <div class="introducao_image">
-                <img src="imagens/desenvolvedor.png" alt="pessoa desenvolvendo software">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <a href="index.html#sobre">
+                            <li>Sobre</li>
+                        </a>
+                        <a href="index.html#projects">
+                            <li>Projetos</li>
+                        </a>
+                        <a href="index.html#curriculo">
+                            <li>Currículo</li>
+                        </a>
+                        <a href="index.html#tecnologia">
+                            <li>Tecnologias</li>
+                        </a>
+                        <a href="#">
+                            <li class="btnContato">Contato</li>
+                        </a>
+                    </ul>
+                </nav>
             </div>
-        </section>
 
-        <section class="projects">
-            <h2>Projetos</h2>
-            <div class="projects_container">
-                <div class="projects_container_project">
-                    <div class="image">
-                        <div class="img1">
-                            <h3>Jogo da Velha</h3>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <a href="https://erickbalbino.github.io/jogo-da-velha" target="_blank"><button>Ver Projeto</button></a>
-                    </div>
-                </div>
-                
-                <div class="projects_container_project">
-                    <div class="image">
-                        <div class="img2">
-                            <h3>Historiando</h3>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <a href="https://erickbalbino.github.io/historiando" target="_blank"><button>Ver Projeto</button></a>
-                    </div>
-                </div>
+            <div class="sidebar">
+                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                <label for="checkbox">
+                    <i class="fas fa-bars" id="open"></i>
+                    <i class="far fa-window-close" id="close"></i>
+                </label>
 
-                <div class="projects_container_project">
-                    <div class="image">
-                        <div class="img3">
-                            <h3>AAA Fire</h3>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <a href="https://erickbalbino.github.io/aaa-fire" target="_blank"><button>Ver Projeto</button></a>
-                    </div>
-                </div>
-
-                <div class="projects_container_project">
-                    <div class="image">
-                        <div class="img4">
-                            <h3>Bloco de Notas</h3>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <a href="https://erickbalbino.github.io/bloco-de-notas" target="_blank"><button>Ver Projeto</button></a>
-                    </div>
-                </div>
-
-                <div class="projects_container_project">
-                    <div class="image">
-                        <div class="img3">
-                            <h3>AAA Fire</h3>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <a href="https://erickbalbino.github.io/aaa-fire" target="_blank"><button>Ver Projeto</button></a>
-                    </div>
+                <div class="sidebar_container" id="sidebar">
+                    <ul>
+                        <a href="index.html#sobre" id="link">
+                            <li><i class="far fa-question-circle" id="sobre"></i>Sobre</li>
+                        </a>
+                        <a href="index.html#projects">
+                            <li><i class="fas fa-laptop-code"></i>Projetos</li>
+                        </a>
+                        <a href="index.html#curriculo">
+                            <li><i class="far fa-id-card"></i>Curriculo</li>
+                        </a>
+                        <a href="index.html#tecnologia">
+                            <li><i class="fas fa-terminal"></i>Tecnologias</li>
+                        </a>
+                        <a href="index.html#contato">
+                            <li><i class="fas fa-phone-square-alt"></i>Contato</li>
+                        </a>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
+        </header>
 
-    <footer>
+        <main>
+            <section class="introducao">
+                <div class="introducao_text">
+                    <h1>welcome to my world!</h1>
+                    <p>Olá, meu nome é Erick, sou desenvolvedor front-end, esse é meu portfólio, seja bem-vindo <span class="underline">_</span></p>
+                </div>
 
-    </footer>
-</body>
+                <div class="introducao_image">
+                    <img src="imagens/desenvolvedor.png" alt="pessoa desenvolvendo software">
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <h2>Projetos</h2>
+                <div class="projects_container">
+                    <div class="projects_container_project">
+                        <div class="image">
+                            <div class="img1">
+                                <h3>Jogo da Velha</h3>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="https://erickbalbino.github.io/jogo-da-velha" target="_blank"><button>Ver Projeto</button></a>
+                        </div>
+                    </div>
+                    
+                    <div class="projects_container_project">
+                        <div class="image">
+                            <div class="img2">
+                                <h3>Historiando</h3>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="https://erickbalbino.github.io/historiando" target="_blank"><button>Ver Projeto</button></a>
+                        </div>
+                    </div>
+
+                    <div class="projects_container_project">
+                        <div class="image">
+                            <div class="img3">
+                                <h3>AAA Fire</h3>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="https://erickbalbino.github.io/aaa-fire" target="_blank"><button>Ver Projeto</button></a>
+                        </div>
+                    </div>
+
+                    <div class="projects_container_project">
+                        <div class="image">
+                            <div class="img4">
+                                <h3>Bloco de Notas</h3>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="https://erickbalbino.github.io/bloco-de-nota" target="_blank"><button>Ver Projeto</button></a>
+                        </div>
+                    </div>
+
+                    <div class="projects_container_project">
+                        <div class="image">
+                            <div class="img5">
+                                <h3>Clone Web Whatsapp</h3>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="https://erickbalbino.github.io/clone-whatsapp" target="_blank"><button>Ver Projeto</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tecnologias" id="tecnologia">
+                <h2>Tecnologias</h2>
+                <div class="tecnologias_container">
+                    <div class="tecnologias_container_tecnologia">
+                        <h3>Front-End</h3>
+                        <div class="tecnologia">
+                            <div class="linha-azul"><span>HTML5</span></div>
+                            <img src="imagens/html5.png" alt="icone html5">
+                        </div>
+
+                        <div class="tecnologia-reverse">
+                            <div class="linha-azul-reverse"><span>CSS3</span></div>
+                            <img src="imagens/css3.png" alt="icone css3">
+                        </div>
+
+                        <div class="tecnologia">
+                            <div class="linha-azul"><span>JavaScript</span></div>
+                            <img src="imagens/javascript.png" alt="icone javascript">
+                        </div>
+
+                        <div class="tecnologia-reverse">
+                            <div class="linha-azul-reverse"><span>Bootstrap</span></div>
+                            <img src="imagens/bootstrap.png" alt="icone bootstrap">
+                        </div>
+
+                        <div class="tecnologia">
+                            <div class="linha-azul"><span>React</span></div>
+                            <img src="imagens/react.png" alt="icone react">
+                        </div>
+                    </div>
+                    <div class="tecnologias_container_tecnologia">
+                        
+                    </div>
+                    <div class="tecnologias_container_tecnologia">
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>

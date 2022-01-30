@@ -26,11 +26,78 @@
     header .sidebar{
         display: flex;
         width: 44vw;
+        height: 100%;
+        z-index: 1;
     }
 
-    header .sidebar i{
-        font-size: 1.3rem;
+    .sidebar .checkbox{
+        visibility: hidden;
+    }
+
+    .sidebar #open{
+        font-size: 1.4rem;
         font-weight: 300;
+    }
+
+    #close{
+        color: #da2222;
+        position: fixed;
+        left: -30px;
+        top: 10px;
+        font-size: 1.4rem;
+    }
+
+    .sidebar_container{
+        position: fixed;
+        display: flex;
+        left: -250px;
+        top: 0px;
+        width: 250px;
+        background-color: #111;
+        height: 100%;
+        box-shadow: 4px 4px 8px rgba(17, 17, 17, 0.37);
+        transition: 0.4s ease-in-out;
+    }
+    
+    .sidebar_container ul{
+        position: absolute;
+        top: 6%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar_container ul li{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #171717;
+        font-size: 1.1rem;
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #282828;
+    }
+
+    .sidebar_container ul li i{
+        color: #05b4db;
+        font-size: 1.3rem;
+        width: 40px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .checkbox:checked ~ .sidebar_container{
+        transform: translateX(250px);
+    }
+
+    .checkbox:checked ~ label #close{
+        transform: translateX(250px);
+        transition: 0.4s ease-in-out;
+        z-index: 2;
+    }
+
+    #link:checked ~ .sidebar_container{
+        left: -250px;
     }
 
     /* CONTEÚDO */
@@ -62,15 +129,28 @@
     }
 
     .projects{
-        padding: 30px 15px;
+        padding: 30px 5px;
+    }
 
+    .projects h2{
+        padding-left: 10px;
     }
 
     .projects_container{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .projects_container_project{
-        height: 380px;
+        width: 45vw;
+        height: 180px;
+    }
+
+    .projects_container_project h3{
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .projects_container_project button{
+        margin-top: 25px;
     }
 }

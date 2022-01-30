@@ -140,13 +140,13 @@ header div img{
     border: 2px solid #05B4DB;
     border-radius: 5px;
     box-shadow: 4px 4px 8px #00000065;
-    height: 450px;
+    height: 350px;
     width: 90%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .image{
-    height: 80%;
+    height: 100%;
 }
 
 .projects_container_project .img1,
@@ -168,6 +168,10 @@ header div img{
     background-image: url('imagens/jogodavelha.png'); 
 }
 
+.projects_container_project .img2{
+    background-image: url('imagens/historiando.png');
+}
+
 .projects_container_project .img3{
     background-image: url('imagens/aaafire.jpg');
 }
@@ -176,12 +180,18 @@ header div img{
     background-image: url('imagens/blocodenotas.png');
 }
 
+.projects_container_project .img5{
+    background-image: url('imagens/whatsapp.png');
+}
+
 .projects_container_project h3{
     background-color: #3d3d3dd7;
     color: #fff;
     width: 100%;
     text-align: center;
     padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .button{
@@ -209,4 +219,79 @@ header div img{
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
+}
+
+.tecnologias h2{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.tecnologias_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 30px 0px;
+}
+
+.tecnologias_container_tecnologia{
+    width: 26vw;
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 30px 0px;
+}
+
+.tecnologias_container_tecnologia h3{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 30px;
+}
+
+.tecnologias_container_tecnologia .tecnologia{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px; 
+    margin: 30px 0px;
+}
+
+.tecnologias_container_tecnologia .tecnologia-reverse{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 80px;
+    margin: 50px 0px;
+}
+
+.tecnologias_container_tecnologia .linha-azul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    background-color: #05B4DB;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.tecnologias_container_tecnologia span{
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.tecnologias_container_tecnologia .linha-azul-reverse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 50px;
+    background-color: #05B4DB;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.tecnologias_container_tecnologia img{
+    width: 80px;
 }
