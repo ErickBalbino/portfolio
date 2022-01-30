@@ -153,4 +153,21 @@
     .projects_container_project button{
         margin-top: 25px;
     }
+
+    .tecnologias h2{
+        padding-left: 10px;
+    }
+
+    .tecnologias_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tecnologias_container_tecnologia{
+        width: 90vw;
+        margin-bottom: 50px;
+    }
+
+    .tecnologias_container_tecnologia .linha-azul-reverse{
+        width: 148px;
+    }
 }

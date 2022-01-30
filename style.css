@@ -239,6 +239,7 @@ header div img{
     background-color: #161616;
     border-radius: 10px;
     padding: 30px 0px;
+    height: 750px;
 }
 
 .tecnologias_container_tecnologia h3{
@@ -294,4 +295,42 @@ header div img{
 
 .tecnologias_container_tecnologia img{
     width: 80px;
+}
+
+/* AJUSTE ESPAÇO IMAGEM */
+#bootstrap{
+    margin-right: 5px;
+    width: 75px;
+}
+
+#python{
+    width: 75px;
+    margin-left: 3px;
+}
+
+#php{
+    margin-right: 3px;
+}
+
+#mysql{
+    margin-left: 3px;
+}
+
+#git, 
+#docker,
+#vscode,
+#wordpress{
+    width: 75px;
+}
+
+#docker{
+    margin-right: 3px;
+}
+
+#vscode{
+    margin-left: 2px;
+}
+
+#wordpress{
+    margin-right: 3px;
 }
