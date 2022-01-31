@@ -170,4 +170,65 @@
     .tecnologias_container_tecnologia .linha-azul-reverse{
         width: 148px;
     }
+
+    .sobre h2{
+        padding: 0px 10px;
+    }
+
+    .sobre_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profile,
+    .presentation{
+        width: 90vw;
+    }
+
+    .profile{
+        margin-bottom: 40px;
+        padding: 50px;
+    }
+
+    .profile h3{
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .profile img{
+        width: 130px;
+        box-shadow: 12px 12px 0px #046f86;
+    }
+
+    .presentation p{
+        font-size: 1rem;
+    }
+
+    .curriculo{
+        margin: 40px 0px;
+    }
+
+    .curriculo h2{
+        padding: 0px 10px;
+    }
+
+    .curriculo_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    .curriculo_container a{
+        width: 45vw;
+        margin: 0px;
+    }
+
+    .curriculo_container button{
+        width: 45vw;
+        font-size: 1.1rem;
+    }
+
+    .curriculo_container i{
+        font-size: 1.3rem;
+        padding-left: 7px;
+    }
 }
