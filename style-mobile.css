@@ -74,7 +74,7 @@
         background-color: #171717;
         font-size: 1.1rem;
         width: 100%;
-        height: 50px;
+        height: 70px;
         border-bottom: 1px solid #282828;
     }
 
@@ -230,5 +230,13 @@
     .curriculo_container i{
         font-size: 1.3rem;
         padding-left: 7px;
+    }
+
+    footer{
+        height: 120px;
+    }
+
+    footer ul li i{
+        font-size: 2rem;
     }
 }
