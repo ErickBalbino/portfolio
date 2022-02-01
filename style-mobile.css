@@ -140,18 +140,20 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .projects_container a{
+        width: 45vw; 
+        height: 240px;
+    }
+
     .projects_container_project{
         width: 45vw;
-        height: 180px;
+        padding: 0px;
+        height: 240px;
     }
 
-    .projects_container_project h3{
-        font-size: 1rem;
-        padding: 5px;
-    }
-
-    .projects_container_project button{
-        margin-top: 25px;
+    .projects_container_project span{
+        top: 10%;
+        color: #000;
     }
 
     .tecnologias h2{

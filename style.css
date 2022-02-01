@@ -122,12 +122,13 @@ header div img{
 }
 
 .projects{
-    padding: 70px 40px;
+    margin: 70px 0px;
 }
 
 .projects h2{
-    font-size: 2rem;
-    font-weight: 500;
+    padding: 0px 40px;
+    font-size: 2.2rem;
+    font-weight: 400;
 }
 
 .projects_container{
@@ -137,94 +138,98 @@ header div img{
     padding: 30px 0px;
 }
 
-.projects_container_project{
-    border: 2px solid #05B4DB;
-    border-radius: 5px;
-    box-shadow: 4px 4px 8px #00000065;
+.projects_container a{
+    width: 27vw;
     height: 350px;
-    width: 90%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-.image{
-    height: 100%;
+.projects_container_project{
+    width: 27vw;
+    height: 350px;
+    border: 3px solid #05B4DB;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562);
+    box-sizing: border-box;
+    position: relative;
 }
 
-.projects_container_project .img1,
-.projects_container_project .img2,
-.projects_container_project .img3,
-.projects_container_project .img4,
-.projects_container_project .img5{
+.projects_container_project img{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
 }
 
-.projects_container_project .img1{
-    background-image: url('imagens/jogodavelha.png'); 
-}
-
-.projects_container_project .img2{
-    background-image: url('imagens/historiando.png');
-}
-
-.projects_container_project .img3{
-    background-image: url('imagens/aaafire.jpg');
-}
-
-.projects_container_project .img4{
-    background-image: url('imagens/blocodenotas.png');
-}
-
-.projects_container_project .img5{
-    background-image: url('imagens/whatsapp.png');
-}
-
-.projects_container_project h3{
-    background-color: #3d3d3dd7;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 6px;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-.button{
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.projects_container_project button{
-    background-color: #05B4DB;
+.projects_container_project span{
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    top: 80%;
+    left: 1%;
     color: #222;
-    width: 150px;
-    border-radius: 5px;
-    padding: 6px 10px;
-    border: none;
-    outline: transparent;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: 0.2s ease-in-out background-color;
-    cursor: pointer;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    padding: 0px 20px;
 }
 
-.projects_container_project button:hover{
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+/* ÍNICIO EFEITOS OVERLAY */
+#jogo_da_velha:hover > #img_jogo_da_velha{
+    filter: blur(3px);
 }
+
+#jogo_da_velha:hover > #txt_jogo_da_velha{
+    opacity: 1;
+}
+
+#arkkio:hover > #img_arkkio{
+    filter: blur(3px);
+}
+
+#arkkio:hover > #txt_arkkio{
+    opacity: 1;
+}
+
+#historiando:hover > #img_historiando{
+    filter: blur(3px);
+}
+
+#historiando:hover > #txt_historiando{
+    opacity: 1;
+}
+
+#aaa_fire:hover > #img_aaa_fire{
+    filter: blur(3px);
+}
+
+#aaa_fire:hover > #txt_aaa_fire{
+    opacity: 1;
+}
+
+#bloco_de_notas:hover > #img_bloco_de_notas{
+    filter: blur(3px);
+}
+
+#bloco_de_notas:hover > #txt_bloco_de_notas{
+    opacity: 1;
+}
+
+#web_whatsapp:hover > #img_web_whatsapp{
+    filter: blur(3px);
+}
+
+#web_whatsapp:hover > #txt_web_whatsapp{
+    opacity: 1;
+}
+
+/* FIM EFEITOS OVERLAY */
 
 .tecnologias h2{
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 2.2rem;
+    font-weight: 400;
     padding-left: 40px;
 }
 
@@ -344,7 +349,7 @@ header div img{
 }
 
 .sobre h2{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     padding: 0px 40px;
 }
@@ -400,7 +405,7 @@ header div img{
 }
 
 .curriculo h2{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     padding: 0px 40px;
     text-align: center;
