@@ -44,7 +44,7 @@
         position: fixed;
         left: -30px;
         top: 10px;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .sidebar_container{
@@ -137,23 +137,13 @@
     }
 
     .projects_container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .projects_container a{
-        width: 45vw; 
-        height: 240px;
-    }
-
-    .projects_container_project{
-        width: 45vw;
-        padding: 0px;
-        height: 240px;
-    }
-
-    .projects_container_project span{
-        top: 10%;
-        color: #000;
+        width: 80vw; 
+        height: 350px;
+        border-radius: 10px;
     }
 
     .tecnologias h2{

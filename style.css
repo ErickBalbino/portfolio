@@ -140,92 +140,45 @@ header div img{
 
 .projects_container a{
     width: 27vw;
-    height: 350px;
+    height: 400px;
     margin-bottom: 50px;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+    border-right: 2px solid #05b4db;
+    border-bottom: 2px solid #05b4db;
 }
 
-.projects_container_project{
-    width: 27vw;
-    height: 350px;
-    border: 3px solid #05B4DB;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562);
-    box-sizing: border-box;
-    position: relative;
+.projects_container a:hover{
+    transform: scale(1.01);
 }
 
-.projects_container_project img{
+.projects_container a .image{
+    height: 80%;
+}
+
+.projects_container a .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    border-radius: 8px;
-    box-sizing: border-box;
-    transition: 0.2s ease-in-out;
+    border-radius: 5px 5px 0px 0px;
 }
 
-.projects_container_project span{
-    font-size: 1rem;
-    font-weight: 600;
-    position: absolute;
-    top: 80%;
-    left: 1%;
-    color: #222;
-    opacity: 0;
-    transition: 0.2s ease-in-out;
-    padding: 0px 20px;
+.projects_container a .description{
+    height: 20%;
+    background-color: #161616;
 }
 
-/* ÍNICIO EFEITOS OVERLAY */
-#jogo_da_velha:hover > #img_jogo_da_velha{
-    filter: blur(3px);
+.projects_container a .description .text{
+    padding: 10px;
+    background-color: #161616;
+    transform: rotateZ(-6deg) translate(6px, -20px);
+    color: #fff;
 }
 
-#jogo_da_velha:hover > #txt_jogo_da_velha{
-    opacity: 1;
+.projects_container a .description p{
+    transform: rotateZ(6deg) translate(0px, 20px);
 }
-
-#arkkio:hover > #img_arkkio{
-    filter: blur(3px);
-}
-
-#arkkio:hover > #txt_arkkio{
-    opacity: 1;
-}
-
-#historiando:hover > #img_historiando{
-    filter: blur(3px);
-}
-
-#historiando:hover > #txt_historiando{
-    opacity: 1;
-}
-
-#aaa_fire:hover > #img_aaa_fire{
-    filter: blur(3px);
-}
-
-#aaa_fire:hover > #txt_aaa_fire{
-    opacity: 1;
-}
-
-#bloco_de_notas:hover > #img_bloco_de_notas{
-    filter: blur(3px);
-}
-
-#bloco_de_notas:hover > #txt_bloco_de_notas{
-    opacity: 1;
-}
-
-#web_whatsapp:hover > #img_web_whatsapp{
-    filter: blur(3px);
-}
-
-#web_whatsapp:hover > #txt_web_whatsapp{
-    opacity: 1;
-}
-
-/* FIM EFEITOS OVERLAY */
 
 .tecnologias h2{
     font-size: 2.2rem;
